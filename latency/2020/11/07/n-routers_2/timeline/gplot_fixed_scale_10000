@@ -1,0 +1,11 @@
+set autoscale
+unset key
+set ylabel "latency"
+set xlabel "time"
+set terminal jpeg size 2000,1200
+set output "timeline_2_10000_fixed_scale.jpg"
+set title "Timeline View of Trimmed Data -- 10000 Client-Pairs -- Two Routers"
+set yrange [ 0 : 30 ]
+set ytics 0,2,30
+plot "trimmed_data" with points lc rgb "blue"
+

@@ -1,0 +1,18 @@
+# dimension n-clients 1000 10000
+# dimension n-routers 2
+# measurement latency 
+
+set autoscale
+unset key
+set ylabel "latency (msec)"
+set xlabel "N-Clients  (Sender-Receiver Pairs)"
+set terminal jpeg size 2000,600
+set output "2020_11_07_latency.jpg"
+set title "Dispatch Router Latency -- 2 Routers"
+set label "mean" at 9000,4
+set label "99%"  at 9000,12
+set mytics 2
+plot "mean_n-routers_2_n-clients_1000-10000.data" with linespoints lt rgb "red"    lw 3 , \
+     "99_n-routers_2_n-clients_1000-10000.data"   with linespoints lt rgb "orange" lw 2
+
+

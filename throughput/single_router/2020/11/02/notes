@@ -1,0 +1,10 @@
+1 router
+100 byte payload messages
+router has 30 worker threads
+senders run unthrottled
+machine: AMD 3970X 32 core * 3.7 GHz 256 GB (brontonomicon)
+client: modified C Proactor. Source code in https://github.com/mgoulish/mercury
+dispatch version: 1.15.0-SNAPSHOT
+proton version: 0.33.0-SNAPSHOT
+
+

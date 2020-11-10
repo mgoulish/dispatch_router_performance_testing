@@ -1,0 +1,4 @@
+#! /bin/bash
+
+gnuplot ./n-routers_3_n-clients_1000-4000.gplot
+display ./latency_n-routers_3_n-clients_1000_4000.jpg

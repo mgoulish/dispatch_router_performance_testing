@@ -1,0 +1,9 @@
+set autoscale
+unset key
+set ylabel "messages per second"
+set xlabel "sender-receiver pairs"
+set terminal jpeg noenhanced size 2000,500
+set output "throughput_n-routers_2_n-clients_1_100.jpg"
+set title "Dispatch Router Throughput Test - 2 Routers"
+set yrange [ 0 : 500000 ]
+plot "data" with linespoints
